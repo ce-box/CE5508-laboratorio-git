@@ -11,7 +11,25 @@ fi
 
 # Check for copyright comment in *.py filess
 if [[ ! `egrep "^#.*copyright.*$" */*.py` ]]; then
-    echo "ERROR: Disallowed development configuration in file: .py"
+    echo "ERROR: There is no copyright comment in the file: : .py"
+    exit 1
+fi
+
+# Check for copyright comment in *.js filess
+if [[ ! `egrep "^//.*copyright.*$" */*.js` ]]; then
+    echo "ERROR: There is no copyright comment in the file: : .js"
+    exit 1
+fi
+
+# Check for copyright comment in *.cs filess
+if [[ ! `egrep "^//.*copyright.*$" */*.cs` ]]; then
+    echo "ERROR: There is no copyright comment in the file: : .cs"
+    exit 1
+fi
+
+# Check for copyright comment in *.cs filess
+if [[ ! `egrep "^//.*copyright.*$" */*.java` ]]; then
+    echo "ERROR: There is no copyright comment in the file: : .java"
     exit 1
 fi
 
