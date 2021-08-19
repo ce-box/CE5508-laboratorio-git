@@ -1,13 +1,13 @@
 # api-gateway
-api-gateway/ @estalvgs1999
+/api-gateway/ @estalvgs1999
 
 # frontend
-frontend/ @BerthaBrenes
+/frontend/ @BerthaBrenes @estalvgs1999
 
 # java-rest-api
-java-rest-api/ @estalvgs1999
+/java-rest-api/ @estalvgs1999
 
 # python
-ml-library/ @BerthaBrenes
+/ml-library/ @BerthaBrenes
 
 .gitignore @estalvgs1999
