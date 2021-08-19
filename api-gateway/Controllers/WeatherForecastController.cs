@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
+// Copyright
+
 namespace api_gateway.Controllers
 {
     [ApiController]

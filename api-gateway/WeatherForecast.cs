@@ -1,5 +1,7 @@
 using System;
 
+// Copyright
+
 namespace api_gateway
 {
     public class WeatherForecast

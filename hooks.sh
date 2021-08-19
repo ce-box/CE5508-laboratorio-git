@@ -1,25 +1,25 @@
 #!/bin/bash -l
 
 # Check for copyright comment in *.py filess
-if [[ ! `egrep "^#.*copyright.*$" */*.py` ]]; then
+if [[ ! `egrep -ir "^#.*copyright.*$" --include="*.py"` ]]; then
     echo "ERROR: There is no copyright comment in the file: : .py"
     exit 1
 fi
 
 # Check for copyright comment in *.js filess
-if [[ ! `egrep "^//.*copyright.*$" */*.js` ]]; then
+if [[ ! `egrep -ir "^//.*copyright.*$" --include="*.js"` ]]; then
     echo "ERROR: There is no copyright comment in the file: : .js"
     exit 1
 fi
 
 # Check for copyright comment in *.cs filess
-if [[ ! `egrep "^//.*copyright.*$" */*.cs` ]]; then
+if [[ ! `egrep -ir "^//.*copyright.*$" --include="*.cs"` ]]; then
     echo "ERROR: There is no copyright comment in the file: : .cs"
     exit 1
 fi
 
 # Check for copyright comment in *.cs filess
-if [[ ! `egrep "^//.*copyright.*$" */*.java` ]]; then
+if [[ ! `egrep -ir "^//.*copyright.*$" --include="*.java"` ]]; then
     echo "ERROR: There is no copyright comment in the file: : .java"
     exit 1
 fi
